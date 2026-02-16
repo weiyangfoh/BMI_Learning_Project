@@ -1,0 +1,16 @@
+m = float(input("Please enter your height in meters: "))
+n = float(input("Please enter your weight in kg: "))
+
+bmi = n / m**2
+print("Your BMI is:", bmi)
+
+if bmi < 18:
+    print("Your BMI is below normal.")
+elif 18 <= bmi < 25:
+    print("Your BMI is normal. Very good!")
+elif 25 <= bmi <= 30:
+    print("Your BMI is high. Please take care of your weight.")
+elif bmi > 30:
+    print("Obesity level BMI! Please pay attention!")
+else:
+    print("Error.")
